@@ -1,0 +1,10 @@
+{% extends "CoreApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <form class="register-form form" method="post" action="" style="color: white;">{% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btn-log btn-dark">Siguiente</button>
+    </form>
+{% endblock %}

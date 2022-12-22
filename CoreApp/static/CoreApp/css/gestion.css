@@ -1,0 +1,391 @@
+body {
+  font-family: 'Lora';
+  background: linear-gradient(rgba(28, 29, 51, 0.65), rgba(0, 0, 0, 0.65)), url("../img/bg_main.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
+p {
+  line-height: 1.75;
+}
+.text-faded {
+  color: rgba(255, 255, 255, 0.3);
+}
+body{
+  display: grid;
+  place-items: center;
+}
+.contenedor{
+  width: 95%;
+  height: 95%;
+  border-radius: 20px;
+  background-color: #17171775;
+}
+.header{
+  display: grid;
+  grid-template-columns: 2fr minmax(150px, 200px);
+  place-items: end;
+}
+.site-heading {
+  margin: 1rem;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: 'Raleway';
+  margin-left: 75px;
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 4rem;
+}
+
+.site-heading .site-heading-lower:hover{
+  color: #dc3545;
+}
+
+.page-section {
+  margin: 2rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom:.5rem;
+
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+
+.section-heading .section-heading-under {
+  display: block;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 300;
+  margin-top:.5rem;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+#mainNav {
+  background-color: #171717;
+  font-family: 'Raleway';
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#mainNav .navbar-brand {
+  color: #ffffff;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+}
+.nav-item{
+  text-align: center;
+}
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: #fff;
+  text-decoration: underline;
+}
+.agotado{
+  background-color: rgb(19, 19, 19) !important;
+}
+.card{
+  background-color: #202020;
+  color: white;
+}
+.card-body{
+  padding: 0.5rem !important;
+}
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1.3rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #dc3545;
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #dc3545;
+  }
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.form{
+  display: grid;
+  place-items: center;
+  margin: 10px;
+
+  background-color: #17171775;
+}
+
+.form label{
+  color: white;
+  line-height: 2rem;
+  font-size: 24px;
+}
+
+.errorlist{
+  display: none;
+}
+
+#id_mensajeria{
+  width: 30px;
+}
+
+.form input{
+  width: 50%;
+  margin: 15px;
+  background-color: #ffffff75;
+  line-height: 2.5rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.form h4, .form ul{
+  color: white;
+}
+
+.form ul{
+  font-size: 20px;
+}
+
+.helptext{
+  display: none;
+}
+.btn-log{
+  margin: 5px;
+  padding-left: 78px;
+  padding-right: 78px;
+  font-size: 24px;
+}
+.intro {
+  position: relative;
+}
+.alert-danger{
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+.prioritized{
+  border: solid 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  background: linear-gradient(#171717, #202020);
+}
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 70%;
+    float: left;
+    height: 430px;
+  }
+  .intro .intro-text {
+    left: 600;
+    width: 60%;
+    margin-top: 3rem;
+    background-color: #dc3545;
+    color: cornsilk;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .column-wrapper{
+    display: grid;
+    grid-template-columns:minmax(200px, 25%) 2fr;
+    margin: 2rem;
+  }
+  .in_row{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1200px;
+  }
+  .column{
+    width: 100%;
+    height: 100%;
+  }
+  .card{
+    height: 400px;
+  }
+  .carro{
+    margin: 5px;
+    background-color: #17171775;
+  }
+  .table-important{
+    background-color: #171717;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(242, 245, 240);
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: #17171708;
+  color: cornsilk;
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-innerv {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+}
+
+.address strong {
+  font-size: 1.2rem;
+}
+
+.footer {
+   background-color:#171717;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+}
+
+
+
+.font-weight-light {
+  font-weight: 100 !important;
+}
+
+.mbtm{
+  padding-top: 5rem;
+}
+
+.mbt{
+  padding-top: 2rem;
+}
+
+.mbt1{
+  padding-top: 1.25rem;
+}
+
+a.link{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a.link:hover{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section-content{
+  font-family: 'Lora' !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
+}
+
+ul.errorlist{
+  padding-top: .75rem;
+  font-style: italic;
+  color: red;
+}

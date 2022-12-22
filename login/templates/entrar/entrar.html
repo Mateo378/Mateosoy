@@ -1,0 +1,16 @@
+{% extends "CoreApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <form class="login-form form" method="post" action="" style="color: white;">{% csrf_token %}
+        {% if messages %}
+            {% for mensaje in messages %}
+                {{mensaje}}
+            {% endfor %}
+        {% endif %}
+        {{form}}
+        <button type="submit" class="btn btn-log btn-success">Login</button>
+        <span style="font-size: 20px;">¿No tienes cuenta? Regístrate aquí <a class="nav-link text-uppercase text-expanded text-center" href="{% url  'login' %}">Registro</a></span>
+    </form>
+{% endblock %}
